@@ -4,7 +4,7 @@ MAINTAINER Ayub Malik <ayub.malik@gmail.com>
 
 WORKDIR /opt
 
-ENV HZ_VERSION 3.6.1
+ENV HZ_VERSION 3.6.2
 
 ENV HZ_HOME /opt/hazelcast/
 
@@ -22,4 +22,3 @@ ENV CLASSPATH=$HZ_HOME/lib/hazelcast-$HZ_VERSION.jar
 EXPOSE 5701
 
 CMD java -server -Dhazelcast.config=$HZ_HOME/bin/hazelcast.xml com.hazelcast.core.server.StartServer
-
